@@ -64,48 +64,6 @@ def main(n):
 
     return n_best, ratio_best, totient_best
 
-    # # Idea:
-    # #     Iterate up towards `n_max`.
-    # #     Keep track of factors of each integer along the way.
-    # #     Use factors of previous numbers to determine relative primeness.
-    # #     Relatively prime numbers should only share 1 as a factor.
-    #
-    # n_best = totient_ratio_best = totient_best = 0
-    #
-    # # factors_by_num = {1: {1}}
-    # for x in range(2, n_max+1):
-    #     # x_factors = set()
-    #     # x_mid = floor(sqrt(x)) + 1
-    #     # for f in range(1, x_mid):
-    #     #     if x % f == 0:
-    #     #         x_factors.add(f)
-    #     #         x_factors.add(x//f)
-    #     #     else:
-    #     #         continue
-    #
-    #     # Count relatively prime numbers below `x`
-    #     x_totient = 0
-    #     for y in range(1, x):
-    #         if gcd(x, y) == 1:
-    #             x_totient += 1
-    #         # if len(x_factors.intersection(factors_by_num[y])) == 1:
-    #         #     x_totient += 1
-    #         # else:
-    #         #     continue
-    #
-    #     # Check if inverse totient ratio is better
-    #     x_ratio = x / x_totient
-    #     if x_ratio > totient_ratio_best:
-    #         print('{} is better!'.format(x))
-    #         n_best = x
-    #         totient_ratio_best = x_ratio
-    #         totient_best = x_totient
-    #
-    #     # Keep track of x's factors for later
-    #     # factors_by_num[x] = x_factors
-    #
-    # return n_best, totient_ratio_best, totient_best
-
 
 if __name__ == '__main__':
     upper_limit = int(input('Enter a natural number (greater than 1): '))
