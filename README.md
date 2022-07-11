@@ -17,6 +17,6 @@ For example, as 1, 2, 4, 5, 7, and 8, are all less than nine and relatively prim
 |  9 | 1, 2, 4, 5, 7, 8  |  6 	| 1.5       |
 | 10 | 1, 3, 7, 9	       |  4 	| 2.5       |
 
-It can be seen that n=6 produces a maximum n/φ(n) for n ≤ 10.
+It can be seen that *n*=6 produces a maximum *n*/φ(*n*) for *n* ≤ 10.
 
-Find the value of n ≤ 1,000,000 for which n/φ(n) is a maximum.
+Find the value of *n* ≤ 1,000,000 for which *n*/φ(*n*) is a maximum.
