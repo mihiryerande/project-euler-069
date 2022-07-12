@@ -22,7 +22,10 @@
 #
 #     Find the value of n ≤ 1,000,000 for which n/φ(n) is a maximum.
 
-def main(n):
+from typing import Tuple
+
+
+def main(n: int) -> Tuple[int, float, int]:
     """
     Returns the number `x` (≤ `n`) having the greatest inverse totient ratio, x/φ(x),
       as well as the ratio itself, and the totient function's value for `x`.
